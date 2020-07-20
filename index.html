@@ -8,32 +8,35 @@
         .group > *{
             margin: 0.5px;
         }
+        .jamsilBr { width: 60px; background: rgb(130, 224, 255); border: 2px solid #000000; padding: 1px; margin: 3px; }
+        .jamsilSr { width: 60px; background: rgb(130, 224, 255); border: 2px solid #000000; padding: 1px; margin: 3px; }
     </style>
     <title>조 편성</title>
 </head>
 <body>
     <label for="">형제</label><br/>
-    <div class="group" data-toggle="buttons" id="people">
-        <button class="btn btn-primary jamsilBr" id="br01">김기훈</button>
-        <button class="btn btn-primary jamsilBr" id="br02">이철기</button>
-        <button class="btn btn-primary jamsilBr" id="br03">전주현</button>
-        <button class="btn btn-primary jamsilBr" id="br04">정동욱</button>
+    <div class="group" id="people">
+        <button class="jamsilBr" id="br01">김기훈</button>
+        <button class="jamsilBr" id="br02">이철기</button>
+        <button class="jamsilBr" id="br03">전주현</button>
+        <button class="jamsilBr" id="br04">정동욱</button>
+        <button class="jamsilBr" id="br05">이병훈</button>
     </div><br/>
     <label for="">자매</label><br/>
-    <div class="group" data-toggle="buttons" id="people">
-        <button class="btn btn-primary jamsilSr" id="sr01">곽희정</button>
-        <button class="btn btn-primary jamsilSr" id="sr02">곽희은</button>
-        <button class="btn btn-primary jamsilSr" id="sr03">백향기</button>
-        <button class="btn btn-primary jamsilSr" id="sr04">강다정</button>
-        <button class="btn btn-primary jamsilSr" id="sr05">러실라</button>
-        <button class="btn btn-primary jamsilSr" id="sr06">김한빛</button>
-        <button class="btn btn-primary jamsilSr" id="sr07">김한별</button>
+    <div class="group" id="people">
+        <button class="jamsilSr" id="sr01">곽희정</button>
+        <button class="jamsilSr" id="sr02">곽희은</button>
+        <button class="jamsilSr" id="sr03">백향기</button>
+        <button class="jamsilSr" id="sr04">강다정</button>
+        <button class="jamsilSr" id="sr05">러실라</button>
+        <button class="jamsilSr" id="sr06">김한빛</button>
+        <button class="jamsilSr" id="sr07">김한별</button>
+        <button class="jamsilSr" id="sr08">서은지</button>
     </div><br/>
-    <div id="attendance"></div>
+    <div id="attendanceBr"></div>
+    <div id="attendanceSr"></div>
     <div id="absence"></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
