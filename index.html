@@ -8,12 +8,20 @@
         .group > *{
             margin: 0.5px;
         }
+        .leader { width: 60px; background: rgb(130, 224, 255); border: 2px solid #000000; padding: 1px; margin: 3px; }
         .jamsilBr { width: 60px; background: rgb(130, 224, 255); border: 2px solid #000000; padding: 1px; margin: 3px; }
         .jamsilSr { width: 60px; background: rgb(130, 224, 255); border: 2px solid #000000; padding: 1px; margin: 3px; }
+        #grouping { width: 60px; background: rgb(6, 243, 77); border: 2px solid #000000; padding: 1px; margin: 3px; }
     </style>
     <title>조 편성</title>
 </head>
 <body>
+    <label for="">조장</label><br/>
+    <div class="group" id="people">
+        <button class="leader" id="leader02">이철기</button>
+        <button class="leader" id="leader03">전주현</button>
+        <button class="leader" id="leader04">정동욱</button>
+    </div><br/>
     <label for="">형제</label><br/>
     <div class="group" id="people">
         <button class="jamsilBr" id="br01">김기훈</button>
@@ -33,9 +41,15 @@
         <button class="jamsilSr" id="sr07">김한별</button>
         <button class="jamsilSr" id="sr08">서은지</button>
     </div><br/>
+    <label for="">조장</label><br/>
+    <div id="attendanceLeader"></div>
+    <label for="">형제</label><br/>
     <div id="attendanceBr"></div>
+    <label for="">자매</label><br/>
     <div id="attendanceSr"></div>
     <div id="absence"></div>
+    <button id="grouping">조편성</button>
+
 
     <script src="./app.js"></script>
 </body>
